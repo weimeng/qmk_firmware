@@ -21,6 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // place overrides here
+#define SPLIT_USB_DETECT
+
 #undef MASTER_LEFT
 #define EE_HANDS
 
