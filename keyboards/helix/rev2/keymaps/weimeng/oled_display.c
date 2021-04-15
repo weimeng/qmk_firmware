@@ -219,7 +219,6 @@ void oled_task_user(void) {
     } else {
         render_logo();
         render_rgbled_status(false);
-        render_layer_status();
     }
 }
 #    endif
