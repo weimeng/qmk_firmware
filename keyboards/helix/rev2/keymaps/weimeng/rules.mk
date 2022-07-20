@@ -1,10 +1,6 @@
-# QMK Standard Build Options
-#   change to "no" to disable the options, or define them in the Makefile in
-#   the appropriate keymap folder that will get included automatically
-#
-#   See TOP/keyboards/helix/rules.mk for a list of options that can be set.
-#   See TOP/docs/config_options.md for more information.
-#
+SPLIT_KEYBOARD = yes
+
+LED_UNDERGLOW_ENABLE = yes
 EXTRAKEY_ENABLE = yes
 LTO_ENABLE = no  # if firmware size over limit, try this option
 
@@ -30,7 +26,3 @@ OLED_SELECT = core
 ifeq ($(strip $(OLED_ENABLE)), yes)
     SRC += oled_display.c
 endif
-
-# convert Helix-specific options (that represent combinations of standard options)
-#   into QMK standard options.
-include $(strip $(KEYBOARD_LOCAL_FEATURES_MK))
