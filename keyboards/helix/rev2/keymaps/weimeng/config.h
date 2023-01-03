@@ -21,6 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // place overrides here
+#undef MASTER_LEFT
+#undef MASTER_RIGHT
+#define EE_HANDS
 
 // If you need more program area, try select and reduce rgblight modes to use.
 
